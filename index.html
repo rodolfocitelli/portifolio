@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Rodolfo Citelli Santarem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #2980b9);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: inline-block;
+    }
+
+    .social-links a:hover {
+      color: #f1c40f;
+      transform: translateY(-3px);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 0.6s forwards;
+    }
+
+    section:nth-child(1) { animation-delay: 0.2s; }
+    section:nth-child(2) { animation-delay: 0.4s; }
+    section:nth-child(3) { animation-delay: 0.6s; }
+    section:nth-child(4) { animation-delay: 0.8s; }
+    section:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2980b9;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #2980b9;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-list a {
+      display: inline-block;
+      background: #2980b9;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem 0;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-list a:hover {
+      background: #1a5276;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!--<img src="https://media.licdn.com/dms/image/v2/D4E03AQHorV_Wxmfylg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1687031127734?e=1756339200&v=beta&t=3I9sa6biMcZQb-uoRFu98X7aDBebi3EgLyxTqH50UGE" alt="Foto de perfil" class="avatar"> -->
+    <h1>Rodolfo Citelli Santarem</h1>
+    <p>Bacharel em Sistemas de Informação | Desenvolvedor em formação</p>
+    <p>📧 rodolfocitelli@gmail.com · 📍 Conchal - SP · 📱 19 99838-7861</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/rodolfo-citelli-santarem" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/rodolfocitelli" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.dio.me/users/rodolfocitelli" target="_blank"><i class="fas fa-certificate"></i></a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre</h2>
+      <p>Bacharel em Sistemas de Informação em processo de transição de carreira.
+         Minha trajetória inclui ensino e empreendedorismo, mas hoje foco no aprendizado de linguagens de programação,
+         ciência de dados e tecnologias modernas, buscando minha transição definitiva 
+         para o setor de tecnologia e uma oportunidade como desenvolvedor em equipe dinâmica e colaborativa.</p>
+    </section>
+
+    <section>
+      <h2>Formação Acadêmica</h2>
+      <p><strong>FHO - Fundação Hermínio Ometto</strong>
+        <br>Bacharelado em Sistemas de Informação (2011 – 2016)</p>
+    </section>
+
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <ul>
+        <li><strong>Linguagens:</strong> Python · Java · C · SQL</li>
+        <li><strong>Conceitos:</strong> POO · Estrutura de Dados</li>
+        <li><strong>Ferramentas:</strong> VS Code · MySQL · GitHub</li>
+        <li><strong>Idiomas:</strong> Inglês Avançado · Italiano Intermediário</li>
+      </ul>
+    </section>
+
+    <section class="project-list">
+      <h2>Portfólio & Certificações</h2>
+      <br>
+      <a href="https://github.com/rodolfocitelli" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/rodolfo-citelli-santarem" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.dio.me/users/rodolfocitelli" target="_blank"><i class="fas fa-certificate"></i> DIO</a>
+    </section>
+
+    <section>
+      <h2>Experiências Relevantes</h2>
+      <p><strong>Professor de Inglês - My Way Idiomas</strong> (2024)<br>Comunicação, didática e uso de tecnologia.</p><br>
+      <p><strong>Empreendedor - Padoca & Milva Pisos</strong> (2009 - atual)<br>Gestão, liderança e resolução de problemas.</p><br>
+      <p><strong>Experiência Internacional - Reino Unido</strong> (2017-2019)<br>Trabalho em equipe e adaptação multicultural.
+        <br><a href="https://www.morsolondon.co.uk/" target="_blank">MORSO</a> · www.morsolondon.co.uk
+        <br><a href="https://uk.vapiano.com/" target="_blank">VAPIANO</a> . uk.vapiano.com
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rodolfo Citelli Santarem — Desenvolvido com 💻 e dedicação</p>
+  </footer>
+</body>
+</html>
